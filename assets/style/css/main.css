@@ -183,7 +183,11 @@ body ::selection {
   color: #ffffff;
   text-decoration: none;
   font-style: italic;
-  border-bottom: 2px solid #FFF84B;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+.paragraph a:hover {
+  border-bottom: 2px solid #fff84b;
 }
 
 .label {
@@ -616,6 +620,10 @@ ul.bullets li::before {
   padding: 32px;
   box-sizing: border-box;
 }
+.home-page-container .intro .title-3 {
+  color: #FFF84B;
+  line-height: 1.4;
+}
 @media (min-width: 1000px) {
   .home-page-container .intro {
     padding: 96px;
@@ -787,8 +795,8 @@ ul.bullets li::before {
 }
 .home-page-container .info .grid-container .project .arrow {
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 24px;
+  right: 24px;
   border-radius: 100%;
   height: 52px;
   width: 52px;
